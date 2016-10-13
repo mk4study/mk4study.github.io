@@ -1,0 +1,121 @@
+table.common {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  width: 900px;
+  border-collapse: separate;
+  border-spacing: 2px;
+  font-size: 100%;
+}
+
+table.common th,
+table.common td {
+  padding: 4px 6px;
+}
+
+table.common th {
+  background: #4682B4;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 92%;
+  color: #FFF;
+}
+
+table.common tr:hover td {
+  background: #FFCCCC;
+}
+
+td.system {
+  width: 400px;
+  background: #E5EAFF;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.div {
+  width: 50px;
+  background: #E5EAFF;
+  text-align: center;
+  white-space: nowrap;
+}
+
+td.id {
+  width: 400px;
+  background: #E5EAFF;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.name {
+  width: 400px;
+  background: #E5EAFF;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.title {
+  width: 400px;
+  background: #E5EAFF;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.open {
+  width: 50px;
+  background: #E5EAFF;
+  text-align: center;
+  white-space: nowrap;
+}
+
+table.select {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  width: 900px;
+  border-collapse: separate;
+  border-spacing: 2px;
+  font-size: 100%;
+}
+
+table.select th,
+table.select td {
+  padding: 4px 6px;
+}
+
+table.select th {
+  background: #4682B4;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 92%;
+  color: #FFF;
+}
+
+table.select tr:hover td {
+  background: #FFCCCC;
+}
+
+td.id {
+  width: 400px;
+  background: #E5EAFF;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.name {
+  width: 400px;
+  background: #E5EAFF;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.title {
+  width: 400px;
+  background: #E5EAFF;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.open {
+  width: 50px;
+  background: #E5EAFF;
+  text-align: center;
+  white-space: nowrap;
+}
