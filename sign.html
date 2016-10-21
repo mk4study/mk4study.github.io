@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>アルバイト出勤登録</title>
+
+    <!-- Bootstrap Core CSS -->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" id="themesid">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/sample.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-origin navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <p class="navbar-text navbar-right">ログイン担当者</p>
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li>
+                        <a href="#services">アルバイト出勤登録</a>
+                    </li>
+                    <li>
+                        <a href="#services">アルバイト退勤登録</a>
+                    </li>
+                    <li>
+                        <a href="#services">アルバイト締め処理</a>
+                    </li>
+                    <li>
+                        <a href="#services">面接委員出退勤登録</a>
+                    </li>
+                    <li>
+                        <a href="#services">面接委員締め処理</a>
+                    </li>-->
+                    <li>
+                        <a href="#about">メニュー</a>
+                    </li>
+                    <li>
+                        <a href="#services">ログオフ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+
+<!--     <a  name="services"></a>
+    <div class="content-section-a">
+    </div> -->
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container center-block">
+            <form wicket:id="form">
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6 col-sm-6">
+                        <span style="font-size: 16pt;">2016年度第3回検定</span>
+                    </div>
+                    <div class="col-lg-6 col-xs-6 col-sm-6" style="text-align: right">
+                        <span style="text-align: right; color: red; font-size: 14pt;">この画面はACS0210です。</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12 col-sm-12">
+                        <h2 class="section-heading text-center">アルバイト出勤登録</h2>
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading text-center">現在時刻　<span id="RealtimeClockArea"></span></h2>
+                        <div class="col-lg-12 col-xs-12 col-sm-12 text-center">
+                            <div class="form-group form-inline text-center">
+                                <label class="text-label">出席番号</label>
+                                <input type="text" name="shuseki-bango" class="form-control input-shuseki-bango">
+                            </div>
+                            <div class="form-group form-inline text-center">
+                                <label class="text-label">パスワード</label>
+                                <input type="password" name="password" class="form-control input-password">
+                                <button type="submit" class="confirm-button">確認</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-xs-1 col-sm-2"></div>
+                    <div class="col-lg-8 col-xs-10 col-sm-8 parttimejob-info">
+                        <div class="item col-lg-9 col-xs-9 col-sm-9">
+                            <div class="item col-lg-12 col-xs-12 col-sm-12">
+                                <div class="bg-info text-left item-name col-lg-4 col-xs-4 col-sm-4">出席番号</div>
+                                <div class="text-left item-value col-lg-8 col-xs-8 col-sm-8">1234567890</div>
+                            </div>
+                            <div class="item col-lg-12 col-xs-12 col-sm-12">
+                                <div class="bg-info text-left item-name col-lg-4 col-xs-4 col-sm-4">氏名</div>
+                                <div class="text-left item-value col-lg-8 col-xs-8 col-sm-8">第一　太郎</div>
+                            </div>
+                            <div class="item col-lg-12 col-xs-12 col-sm-12">
+                                <div class="bg-info text-left item-name col-lg-4 col-xs-4 col-sm-4">氏名カナ</div>
+                                <div class="text-left item-value col-lg-8 col-xs-8 col-sm-8">ダイイチ　タロウ</div>
+                            </div>
+                            <div class="item col-lg-12 col-xs-12 col-sm-12">
+                                <div class="bg-info text-left item-name col-lg-4 col-xs-4 col-sm-4">生年月日</div>
+                                <div class="text-left item-value col-lg-8 col-xs-8 col-sm-8">1987/06/05</div>
+                            </div>
+                            <div class="item col-lg-12 col-xs-12 col-sm-12">
+                                <div class="bg-info text-left item-name col-lg-4 col-xs-4 col-sm-4">メール</div>
+                                <div class="text-left item-value col-lg-8 col-xs-8 col-sm-8">taro@softbank.ne.jp</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xs-3 col-sm-3">
+                            <div id="output" class="image text-center">
+                                <!--<img src="img/photo.jpeg"/>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-1 col-sm-2"></div>
+                </div>
+                <div class="row">
+                    <div>
+                        <!--<input type="file" name="file" id="file" class="file-select">-->
+                        <label class="sign">本人サイン</label>
+                        <canvas id="canvas" width="500px" height="100px"></canvas>
+                        <button style="width:150px;height:40px;font-size:16px;" id="clear">消去</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <button wicket:id="syukkin"type="submit" name="shukkin" class="shukkin">出勤</button>
+                    </div>
+                <div>
+                <input type="hidden" wicket:id="sign">
+            </form>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>/** JS：記述スペース */
+
+$(function() {
+    var showClock = function() {
+        var nowTime = new Date();
+        var nowHour = nowTime.getHours();
+        var nowMin = nowTime.getMinutes();
+        var nowSec = nowTime.getSeconds();
+        var msg = nowHour + ":" + nowMin + ":" + nowSec;
+        $("#RealtimeClockArea").text(msg);
+    }
+    showClock();
+    setInterval(showClock, 1000);
+});
+
+//canvasの読み込み設定
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+//マウスを操作する
+var mouse = {x:0,y:0,x1:0,y1:0,color:"black"};
+var draw = false;
+
+//マウスの座標を取得する
+canvas.addEventListener("mousemove",function(e) {
+  var rect = e.target.getBoundingClientRect();  
+  ctx.lineWidth = 10;
+	ctx.globalAlpha = 1;
+  
+  mouseX = e.clientX - rect.left;
+  mouseY = e.clientY - rect.top;
+  
+  
+  //クリック状態なら描画をする
+  if(draw === true) {
+    ctx.beginPath();
+    ctx.moveTo(mouseX1,mouseY1);
+    ctx.lineTo(mouseX,mouseY);
+    ctx.lineCap = "round";
+    ctx.stroke();
+    mouseX1 = mouseX;
+    mouseY1 = mouseY;
+  }
+});
+  
+  //クリックしたら描画をOKの状態にする
+  canvas.addEventListener("mousedown",function(e) {
+    draw = true;
+    mouseX1 = mouseX;
+    mouseY1 = mouseY;
+    undoImage = ctx.getImageData(0, 0,canvas.width,canvas.height);
+});
+
+//クリックを離したら、描画を終了する
+canvas.addEventListener("mouseup", function(e){
+  draw = false;
+});
+
+//消去ボタンを起動する
+$('#clear').click(function(e) {
+		if(!confirm('本当に消去しますか？')) return;
+    e.preventDefault();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+
+
+</script><style>/** CSS：記述スペース */
+#canvas {
+  border:1px solid gray;
+  margin-top: 10px;
+}
+</style></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
